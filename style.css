@@ -1,26 +1,40 @@
 body {
     margin: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Open Sans', sans-serif; 
 }
+
 .hero {
-  background-color: #00080;
-  color: white;
-  padding: 80px 20px;
-  text-align: center;
+    background-color: #000080; 
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
 }
-.hero h1 {
-  color: #000080;
-  font-size: 36px;
+
+.hero h2 { 
+    color: #ffffff;
+    font-size: 36px;
 }
 
 .hero p {
-  color: #D3D3D3;
-  font-size: 18px;
-
+    color: #D3D3D3;
+    font-size: 18px;
 }
+
+
+.hero-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #D3D3D3;
+    color: #000080;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
 .hero-button:hover {
     background-color: #ffffff;
     color: #000080;
-    transform: scale(1.05); /* Slight grow effect */
+    transform: scale(1.05);
     cursor: pointer;
 }
