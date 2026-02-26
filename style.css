@@ -1,9 +1,26 @@
-h1 {
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+.hero {
+  background-color: #00080;
+  color: white;
+  padding: 80px 20px;
+  text-align: center;
+}
+.hero h1 {
   color: #000080;
   font-size: 36px;
 }
 
-p {
+.hero p {
   color: #D3D3D3;
   font-size: 18px;
+
+}
+.hero-button:hover {
+    background-color: #ffffff;
+    color: #000080;
+    transform: scale(1.05); /* Slight grow effect */
+    cursor: pointer;
 }
