@@ -10,7 +10,7 @@ body {
     text-align: center;
 }
 
-.hero h2 { 
+.hero h1 { 
     color: #ffffff;
     font-size: 36px;
 }
@@ -38,3 +38,4 @@ body {
     transform: scale(1.05);
     cursor: pointer;
 }
+
