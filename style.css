@@ -51,5 +51,26 @@ body {
     
     border-radius: 5px;
 }
+.my-hobbies-list {
+
+    list-style-type: square;
+    
+
+    margin: 20px 0;
+    padding-left: 40px;
+}
+
+.my-hobbies-list li {
+
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 8px;
+    transition: color 0.3s ease;
+}
+
+.my-hobbies-list li:hover {
+    color: #f1b82d;
+    cursor: default;
+}
 
 
