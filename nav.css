@@ -1,0 +1,37 @@
+header {
+    display: flex;
+    justify-content: space-between; /* Puts logo on left, nav on right */
+    align-items: center;
+    padding: 20px 5%;
+    background-color: #333; /* Dark background - change as you like */
+    color: white;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    margin-left: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+
+nav a:hover {
+    color: #ff9900; 
+}
+
+.logo {
+    height: 50px; 
+    width: auto;
+}
