@@ -57,3 +57,15 @@ nav ul li ul li {
     width: 150px;
     display: block;
 }
+
+p:first-of-type::first-letter {
+  font-size: 3em;
+  float: left;
+  line-height: 1;
+  padding-right: 8px;
+}
+
+
+p::first-line {
+  font-weight: bold;
+}
