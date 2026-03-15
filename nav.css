@@ -70,5 +70,7 @@ p::first-line {
   font-weight: bold;
 }
 body {
-    padding: 0 40px; 
+    margin: 0 auto;
+    max-width: 900px;
+    padding: 20px;
 }
