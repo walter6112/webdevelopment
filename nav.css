@@ -69,3 +69,6 @@ p:first-of-type::first-letter {
 p::first-line {
   font-weight: bold;
 }
+body {
+    padding: 0 40px; 
+}
