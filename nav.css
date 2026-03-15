@@ -6,7 +6,8 @@ header {
     background-color: #333; /* Dark background - change as you like */
     color: white;
 }
-
+nav ul li ul { display: none; position: absolute; }
+nav ul li:hover > ul { display: block; }
 nav ul {
     display: flex;
     list-style: none;
