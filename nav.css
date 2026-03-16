@@ -1,6 +1,6 @@
 header {
     display: flex;
-    justify-content: space-between; /* Puts logo on left, nav on right */
+    justify-content: flex-start;
     align-items: center;
     background-color: #333; /* Dark background - change as you like */
     color: white;
