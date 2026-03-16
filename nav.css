@@ -5,6 +5,7 @@ header {
     background-color: #333; /* Dark background - change as you like */
     color: white;
     width: 100%;
+    padding: 20px 0;
 }
 nav ul li ul { display: none; position: absolute; }
 nav ul li:hover > ul { display: block; }
