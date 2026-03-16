@@ -2,7 +2,6 @@ header {
     display: flex;
     justify-content: space-between; /* Puts logo on left, nav on right */
     align-items: center;
-    padding: 20px 5%;
     background-color: #333; /* Dark background - change as you like */
     color: white;
 }
