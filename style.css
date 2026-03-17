@@ -1,77 +1,87 @@
-header {
-    display: flex;
-    justify-content: flex-start; /* Puts logo on left, nav on right */
-    align-items: center;
-    background-color: #333; /* Dark background - change as you like */
-    color: white;
-    width: 200%;
-    padding: 20px 0;
-}
-nav ul li ul { display: none; position: absolute; }
-nav ul li:hover > ul { display: block; }
-nav ul {
-    display: flex;
-    list-style: none;
+body {
     margin: 0;
-    padding: 0;
+    font-family: 'Open Sans', sans-serif; 
 }
-
-nav li {
-    margin-left: 20px;
+header { 
+    width: 100%;
+    background-color: #333; 
+    overflow: visible; 
 }
-
-nav a {
-    text-decoration: none;
+.hero {
+    background-color: #000080; 
     color: white;
-    font-family: Arial, sans-serif;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.hero h1 { 
+    color: #ffffff;
+    font-size: 36px;
+}
+
+.hero p {
+    color: #D3D3D3;
     font-size: 18px;
+}
+
+
+.hero-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #D3D3D3;
+    color: #000080;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
     transition: 0.3s;
 }
 
+.hero-button:hover {
+    background-color: #ffffff;
+    color: #000080;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+.resume-link {
+    display: inline-block; 
+    padding: 10px 20px;  
+    margin: 20px 0;      
+    border: 2px solid #333; 
+    background-color: #f0f0f0; 
+    
+    text-decoration: none;  
+    color: #333;           
+    font-weight: bold;
+    
+    border-radius: 5px;
+}
+.my-activities-list {
 
-nav a:hover {
-    color: #ff9900; 
+    list-style-type: square;
+    
+
+    margin: 20px 0;
+    padding-left: 40px;
 }
 
-.logo {
-    height: 50px; 
-    width: auto;
+.my-activities-list li {
+
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 8px;
+    transition: color 0.3s ease;
 }
 
-nav ul li ul {
-    display: none;
-    position: absolute;
-    background-color: #333; 
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    z-index: 100;
+.my-activities-list li:hover {
+    color: #f1b82d;
+    cursor: default;
+}
+.reflection-container {
+    border: 2px solid #333;
+    padding: 20px 25px;
+    margin: 20px 0;
+    background-color: #f9f9f9;
+    border-radius: 6px;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.15);
 }
 
-
-nav ul li:hover > ul {
-    display: block;
-}
-
-
-nav ul li ul li {
-    width: 150px;
-    display: block;
-}
-
-p:first-of-type::first-letter {
-  font-size: 3em;
-  float: left;
-  line-height: 1;
-  padding-right: 8px;
-}
-
-
-p::first-line {
-  font-weight: bold;
-}
-body {
-    margin: 0 auto;
-    max-width: 900px;
-    padding: 20px;
-}
