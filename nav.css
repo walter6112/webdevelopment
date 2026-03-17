@@ -84,3 +84,8 @@ footer {
     margin: 0 auto;
     padding: 20px;
 }
+.second-paragraph::first-line,
+.third-paragraph::first-line,
+.fourth-paragraph::first-line {
+    text-indent: 2em;
+}
