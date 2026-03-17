@@ -70,6 +70,7 @@ p:first-of-type::first-letter {
 
 p::first-line {
   font-weight: bold;
+  text-indent: 2em;
 }
 
 main {
