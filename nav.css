@@ -84,3 +84,29 @@ footer {
     margin: 0 auto;
     padding: 20px;
 }
+/* Styling for the Profile Image */
+.profile-photo {
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Subtle shadow */
+    margin-bottom: 20px;
+    display: block;
+}
+
+/* Styling for the Video */
+.resume-video {
+    border: 2px solid #333;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+figure {
+    margin: 20px 0;
+}
+
+figcaption {
+    font-style: italic;
+    font-size: 0.9em;
+    color: #555;
+}
