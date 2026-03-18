@@ -85,7 +85,7 @@ footer {
     padding: 20px;
 }
 /* Styling for the Profile Image */
-.profile-photo {
+.WebsiteImage {
     max-width: 300px;
     height: auto;
     border-radius: 10px; /* Rounded corners */
@@ -109,4 +109,8 @@ figcaption {
     font-style: italic;
     font-size: 0.9em;
     color: #555;
+}
+img {
+  width: 300px;
+  height: auto;
 }
