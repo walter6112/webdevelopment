@@ -91,13 +91,19 @@ header {
 }
 .footer-contact {
     display: flex;
+    flex-direction: column; /* Stacks email and phone */
     align-items: center;
-    justify-content: center; /* Centers the content in the footer */
-    gap: 10px;               /* Space between the icon and text */
-    margin-bottom: 10px;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Space between icon and text */
 }
 
 .footer-icon {
-    width: 20px;             /* Adjust size to match your font */
+    width: 20px; /* Adjust size to fit your font height */
     height: auto;
 }
