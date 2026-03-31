@@ -89,4 +89,15 @@ header {
 .fourth-paragraph {
     text-indent: 2em;
 }
+.footer-contact {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centers the content in the footer */
+    gap: 10px;               /* Space between the icon and text */
+    margin-bottom: 10px;
+}
 
+.footer-icon {
+    width: 20px;             /* Adjust size to match your font */
+    height: auto;
+}
