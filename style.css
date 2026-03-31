@@ -107,3 +107,20 @@ header {
     width: 20px; /* Adjust size to fit your font height */
     height: auto;
 }
+@media print {
+    body {
+        font-family: "Times New Roman", serif;
+        color: black;
+        margin: 1in;
+    }
+
+    /* Hide the icons in the footer as requested */
+    .footer-icon {
+        display: none;
+    }
+
+    /* Hide nav or other non-essential items */
+    nav, .header-image {
+        display: none;
+    }
+}
