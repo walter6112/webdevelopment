@@ -91,7 +91,7 @@ header {
 }
 .footer-contact {
     display: flex;
-    flex-direction: column; /* Stacks email and phone */
+    flex-direction: column; 
     align-items: center;
     gap: 10px;
     margin-bottom: 15px;
@@ -100,15 +100,14 @@ header {
 .contact-item {
     display: flex;
     align-items: center;
-    gap: 8px; /* Space between icon and text */
+    gap: 8px; 
 }
 
 .footer-icon {
-    width: 20px; /* Adjust size to fit your font height */
+    width: 20px; 
     height: auto;
 }
 @media print {
-    /* 1. Hide everything NOT requested in the rubric */
     header, 
     nav, 
     img, 
@@ -118,8 +117,6 @@ header {
     .video {
         display: none !important;
     }
-
-    /* 2. Show only the text content */
     body {
         font-family: "Times New Roman", serif !important;
         color: black !important;
@@ -128,8 +125,6 @@ header {
         font-size: 12pt;
         line-height: 1.5;
     }
-
-    /* 3. Style the Footer (Hide the icons as requested) */
     .footer-icon {
         display: none !important;
     }
@@ -139,8 +134,6 @@ header {
         margin-top: 20px;
         text-align: left;
     }
-
-    /* 4. Ensure it fits on one page by removing extra gaps */
     main {
         margin: 0 !important;
         padding: 0 !important;
