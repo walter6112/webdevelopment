@@ -108,19 +108,46 @@ header {
     height: auto;
 }
 @media print {
+    /* 1. Hide everything NOT requested in the rubric */
+    header, 
+    nav, 
+    img, 
+    video, 
+    figcaption, 
+    .resume-link, 
+    .video {
+        display: none !important;
+    }
+
+    /* 2. Show only the text content */
     body {
-        font-family: "Times New Roman", serif;
-        color: black;
-        margin: 1in;
+        font-family: "Times New Roman", serif !important;
+        color: black !important;
+        margin: 1in !important;
+        background: white !important;
+        font-size: 12pt;
+        line-height: 1.5;
     }
 
-    /* Hide the icons in the footer as requested */
+    /* 3. Style the Footer (Hide the icons as requested) */
     .footer-icon {
-        display: none;
+        display: none !important;
     }
 
-    /* Hide nav or other non-essential items */
-    nav, .header-image {
-        display: none;
+    footer {
+        border-top: 1px solid #ccc;
+        margin-top: 20px;
+        text-align: left;
+    }
+
+    /* 4. Ensure it fits on one page by removing extra gaps */
+    main {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    h1, h2, h3 {
+        page-break-after: avoid;
+        margin-top: 10px;
     }
 }
