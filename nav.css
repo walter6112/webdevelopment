@@ -1,4 +1,4 @@
-/* --- Hamburger button (hidden on desktop) --- */
+
 .hamburger {
     display: none;
     flex-direction: column;
@@ -6,7 +6,7 @@
     background: none;
     border: none;
     cursor: pointer;
-    padding: 4px;
+    padding: 4px; 
     margin-left: auto;
 }
 
