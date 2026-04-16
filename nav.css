@@ -1,8 +1,14 @@
+.menu-icon {
+    display: none; 
+    font-size: 30px;
+    cursor: pointer;
+}
+
 header {
     display: flex;
-    justify-content: flex-start; /* Puts logo on left, nav on right */
+    justify-content: flex-start; 
     align-items: center;
-    background-color: #333; /* Dark background - change as you like */
+    background-color: #333; 
     color: white;
     width: 100%;
     box-sizing: border-box;
@@ -113,4 +119,13 @@ figcaption {
 img {
   width: 300px;
   height: auto;
+}
+@media screen and (max-width: 600px) {
+    nav ul {
+        display: none;
+    }
+    .menu-icon {
+        display: block;
+        padding: 10px;
+    }
 }
