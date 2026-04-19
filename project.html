@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="nav.css">
+    <title>Projects | Hudson Walter</title>
+</head>
+<body>
+
+    <header>
+        <img src="logo" alt="Logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="reflection.html">Reflection</a></li>
+                <li>
+                    <a href="project.html">Projects</a>
+                    <ul class="dropdown">
+                        <li><a href="project.html#caesar">Caesar's Cipher</a></li>
+                        <li><a href="project.html#robotics">FRC Robotics</a></li>
+                        <li><a href="project.html#fraternity">Delta Sigma Phi</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- Hamburger button -->
+        <button class="hamburger-btn" id="hamburgerBtn" aria-label="Toggle navigation" aria-expanded="false">&#9776;</button>
+    </header>
+
+    <!-- Mobile nav  -->
+    <nav class="mobile-nav-drawer" id="mobileDrawer" aria-label="Mobile navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="reflection.html">Reflection</a>
+        <a href="project.html">Projects</a>
+        <a href="project.html#caesar">Caesar's Cipher</a>
+        <a href="project.html#robotics">FRC Robotics</a>
+        <a href="project.html#fraternity">Delta Sigma Phi</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <main>
+
+        <h2>Projects &amp; Experience</h2>
+        <p>A look at the projects, competitions, and organizations that have shaped my path as a Computer Science student at the University of Missouri.</p>
+
+        
+        <div class="anchor-nav">
+            <span>Jump to:</span>
+            <a href="project.html#caesar">Caesar's Cipher</a>
+            <a href="project.html#robotics">FRC Robotics</a>
+            <a href="project.html#fraternity">Delta Sigma Phi</a>
+        </div>
+
+        <!-- Project 1 --> 
+        <section class="project-section" id="caesar">
+            <h3>1. Caesar's Cipher &mdash; JavaScript</h3>
+
+            
+            <div class="project-grid">
+
+                
+                <div>
+                    <p>This was a coding project that I did in high school. Caesar's Cipher is a cipher where you have a word such as HELLO and then you give it a shift such as two. That would make each letter go two letters down the alphabet, so the final answer would be JGNNQ. In high school, most of my coding knowledge was in Java and JavaScript. The program prompts you to type a word in all caps and a shift number, then loops through each character to encode the string using modulo arithmetic to wrap around the alphabet. It was one of the first complete programs I built from scratch entirely on my own.</p>
+
+                    <div class="reflection-container">
+                        <strong>Reflection:</strong>
+                        <p>This was one of my first projects that I did on my own and I think this was the moment that I wanted to start programming as a degree when I graduated college. There really isn't a ton of code for this project, but it highlights the topics that I learned in high school and gave me the confidence to pursue Computer Science at Mizzou.</p>
+                    </div>
+                </div>
+
+                <!-- Right: Artifacts -->
+                <div>
+                    <p class="code-label">default.js &mdash; Caesar's Cipher source code</p>
+                    <div class="code-block">
+<pre>function start() {
+  println("Ceaser's Cipher");
+  var oldString = prompt("Type text before encryption in ALL CAPS");
+  var shift = parseInt(prompt("Type shift of text"), 10);
+  var arr = ["A","B","C","D","E","F","G","H","I","J","K","L","M",
+             "N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];
+  var newString = "";
+  encoder(arr, oldString, newString, shift);
+}
+
+function encoder(arr, oldString, newString, shift) {
+  for (var i = 0; i &lt; oldString.length; i++) {
+    var letter = oldString.charAt(i);
+    var index = arr.indexOf(letter);
+    var realIndex = (index + shift) % 26;
+    if (index === -1) {
+      println("Unable to cypher");
+      break;
+    }
+    newString += arr[realIndex];
+  }
+  println("Encoded: " + newString);
+}</pre>
+                    </div>
+
+                    <a class="video-link" href="ITCS.mp4" target="_blank" rel="noopener">&#9654; Watch Demo Video (ITCS.mp4)</a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Project 2: FRC Robotics -->
+        <section class="project-section" id="robotics">
+            <h3>2. First Robotics Competition (FRC) &mdash; Team 2410</h3>
+
+            
+            <div class="project-grid">
+
+                
+                <div>
+                    <p>I joined FRC Team 2410, the Metal Mustangs, my sophomore year of high school in 2021. Every year, we would get a challenge that our robot would have to go through. Then, we would have two to three months to build a robot to compete in competitions across the country. Teams play against each other in alliances, and the winning alliances advance to the next round. The world championship is held annually in Houston against teams from across the entire world. Our team reached the Tulsa Regional and finished in 3rd place &mdash; the farthest our team had ever gone. I helped with both the build process and the programming side of the robot.</p>
+
+                    <div class="reflection-container">
+                        <strong>Reflection:</strong>
+                        <p>This was a very good experience. I will always remember when we were in the playoffs cheering our team on as we somehow kept on winning. This was one of the first times that I learned how to code and work with lots of different machines. I learned how to work as a team in a very short timeline and build a robot from scratch.</p>
+                    </div>
+                </div>
+
+                
+                <div>
+                    <figure class="artifact-card">
+                        <img src="frc_team.jpg" alt="FRC Team 2410 Metal Mustangs group photo at competition">
+                        <figcaption class="artifact-caption">FRC Team 2410 &mdash; Metal Mustangs at the Tulsa Regional</figcaption>
+                    </figure>
+
+                    <figure class="artifact-card">
+                        <img src="frc_crowd.jpg" alt="Team 2410 cheering section at FRC competition arena">
+                        <figcaption class="artifact-caption">Team 2410's cheering section during the playoff rounds</figcaption>
+                    </figure>
+
+                    <figure class="artifact-card">
+                        <img src="frc_logo.png" alt="Metal Mustang Robotics FRC 2410 team logo">
+                        <figcaption class="artifact-caption">Metal Mustang Robotics &mdash; FRC Team 2410 logo</figcaption>
+                    </figure>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Fraternity -->
+        <section class="project-section" id="fraternity">
+            <h3>3. Delta Sigma Phi Fraternity &mdash; University of Missouri</h3>
+
+            <!-- grid layout here -->
+            <div class="project-grid">
+
+                
+                <div>
+                    <p>This past fall I rushed Delta Sigma Phi at the University of Missouri. I joined this fraternity to build a brotherhood and meet new people. Being part of this organization has required significant time management in order to actively participate in chapter and social events. This organization has also given me people that are older than me that have taken classes that I am in and given me lots of helpful feedback. My brothers have also helped encourage my goal of maintaining a 3.5 GPA while pursuing my degree in Computer Science.</p>
+
+                    <div class="reflection-container">
+                        <strong>Reflection:</strong>
+                        <p>Joining this fraternity has been one of the most important parts of my college life at Mizzou. I have learned how to be a leader and improved my ability to manage my demanding academic schedule. I now feel more confident in my professional communication and organizing abilities. I have met people that I will be lifelong friends with and these connections will help me even after I graduate.</p>
+                    </div>
+                </div>
+
+                
+                <div>
+                    <figure class="artifact-card">
+                        <img src="dsp_house.png" alt="Delta Sigma Phi fraternity house">
+                        <figcaption class="artifact-caption">Delta Sigma Phi chapter house</figcaption>
+                    </figure>
+
+                    <figure class="artifact-card">
+                        <img src="dsp_group.png" alt="Delta Sigma Phi brothers holding the fraternity flag outside the chapter house at Mizzou">
+                        <figcaption class="artifact-caption">Delta Sigma Phi brothers at the University of Missouri</figcaption>
+                    </figure>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Hudson Walter - April 19, 2026</p>
+    </footer>
+
+</body>
+</html>
