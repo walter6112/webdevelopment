@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="nav.css">
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-    <title>About Hudson Walter</title>
-</head> 
+    <title>About | Hudson Walter</title>
+</head>
 <body>
 
     <header>
@@ -18,26 +17,29 @@
                 <li><a href="about.html">About</a></li>
                 <li><a href="reflection.html">Reflection</a></li>
                 <li>
-                    <a href="#">Projects</a>
+                    <a href="project.html">Projects</a>
                     <ul class="dropdown">
-                        <li><a href="#">Web Design</a></li>
-                        <li><a href="#">Cybersecurity</a></li>
-                        <li><a href="#">Robotics</a></li>
+                        <li><a href="project.html#caesar">Caesar's Cipher</a></li>
+                        <li><a href="project.html#robotics">FRC Robotics</a></li>
+                        <li><a href="project.html#fraternity">Delta Sigma Phi</a></li>
                     </ul>
                 </li>
                 <li><a href="#">Blog</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
+
+        <!-- Hamburger button -->
+        <button class="hamburger-btn" id="hamburgerBtn" aria-label="Toggle navigation" aria-expanded="false">&#9776;</button>
     </header>
 
     <main>
         <h2>Who I Am</h2>
         <p>I chose to major in Computer Science because it is one of the largest growing fields right now. It all started with Robotics and I also took many Computer Science classes in high school. When I got to the University of Missouri, I didn't know how to code in C, but it is very similar to Java and JavaScript which I know pretty well. Overall, it has strengthened my understanding in programming. The coursework at Mizzou has challenged me in many ways, forcing me to study for exams and manage my time effectively. Beyond that, I joined a fraternity that has helped me adjust to college life while still having a strong focus on my academic goals.</p>
-        <img src="WebsiteImage.jpg" alt="Picture of Hudson Walter">
+
         <h3>Education & Activities</h3>
         <p>Currently, I am pursuing a degree in Computer Science at the University of Missouri - Columbia with an estimated completion date of 2029.</p>
-         
+
         <ul class="my-activities-list">
             <li>University of Missouri - Columbia (Computer Science - 2029)</li>
             <li>Blue Valley North - 2025</li>
@@ -45,33 +47,13 @@
             <li>National Honors Society</li>
             <li>Active Fraternity Member</li>
         </ul>
-        
-        <h3>Video Introduction</h3>
-    <figure>
-        <video controls width="400" class="video">
-            <source src="newvideo.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-        <figcaption>Short resume video introducing my background and goals.</figcaption>
-    </figure>
 
         <a href="resume.pdf" class="resume-link">Download My Resume</a>
     </main>
 
-     <footer>
-    <div class="footer-contact">
-        <div class="contact-item">
-            <img src="mail.png" alt="Email Icon" class="footer-icon">
-            <span>hudsonwalter@icloud.com</span>
-        </div>
-        
-        <div class="contact-item">
-            <img src="phone.png" alt="Phone Icon" class="footer-icon">
-            <span>(913) 300-1439</span>
-        </div>
-    </div>
-    <p>Hudson Walter - February 12, 2026</p>
-</footer>
- 
+    <footer>
+        <p>Hudson Walter - March 2, 2026</p>
+    </footer>
+
 </body>
 </html>
