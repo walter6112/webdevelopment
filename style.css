@@ -271,3 +271,99 @@ header {
         padding: 15px;
     }
 }
+
+.education-table-section {
+    margin: 2rem 0;
+}
+
+.education-table-section figure {
+    margin: 0;
+}
+
+.education-table-section figcaption {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0.6rem;
+}
+
+.table-scroll {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.edu-table {
+    width: 100%;
+    min-width: 500px;
+    border-collapse: collapse;
+    border: 2px solid #333;
+    font-size: 0.95rem;
+}
+
+.edu-table caption {
+    caption-side: top;
+    text-align: left;
+    font-size: 0.8rem;
+    color: #666;
+    padding: 0.5rem 0.75rem 0.25rem;
+    font-style: italic;
+}
+
+
+.edu-table thead th {
+    background-color: #333;
+    color: #fff;
+    text-align: left;
+    padding: 0.75rem 1rem;
+    font-size: 0.85rem;
+    letter-spacing: 0.03em;
+    border-right: 1px solid rgba(255,255,255,0.15);
+}
+
+.edu-table thead th:last-child {
+    border-right: none;
+}
+
+.edu-table tbody th {
+    text-align: left;
+    padding: 0.7rem 1rem;
+    font-weight: 600;
+    border-right: 2px solid #333;
+    border-top: 1px solid #ccc;
+    background: inherit;
+}
+
+
+.edu-table tbody td {
+    padding: 0.7rem 1rem;
+    border-top: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+}
+
+.edu-table tbody td:last-child {
+    border-right: none;
+}
+.edu-table tbody tr:nth-child(odd)  { background-color: #e8e8e8; }
+.edu-table tbody tr:nth-child(even) { background-color: #ffffff; }
+
+
+.edu-table tfoot td {
+    padding: 0.6rem 1rem;
+    border-top: 2px solid #333;
+    font-size: 0.8rem;
+    color: #666;
+    font-style: italic;
+    background-color: #f5f5f5;
+}
+
+@media (max-width: 600px) {
+    .edu-table {
+        font-size: 0.82rem;
+    }
+
+    .edu-table thead th,
+    .edu-table tbody th,
+    .edu-table tbody td,
+    .edu-table tfoot td {
+        padding: 0.55rem 0.65rem;
+    }
+}
