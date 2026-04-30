@@ -394,3 +394,8 @@ header {
 body {
   font-family: 'Inter', sans-serif;
 }
+/* Custom styles for all <h1 or h2> elements */
+h1, h2 {
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
